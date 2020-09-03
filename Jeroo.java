@@ -6,16 +6,14 @@ public class Jeroo extends JerooBase {
 
     
     public void plantCross() {
-        
-    }
-    // Put any helpermethods here
-public void plantCross(){
-  start();
+        start();
   planttopleftquadrant();
   planttopright_bottomrightquadrant();
   planttopright_bottomrightquadrant();
   plantbottomleftquadrant();
-}
+    }
+    // Put any helpermethods here
+
 public void start(){
   turn(RIGHT);
   sixhop();
