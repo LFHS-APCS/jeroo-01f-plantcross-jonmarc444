@@ -9,7 +9,69 @@ public class Jeroo extends JerooBase {
         
     }
     // Put any helpermethods here
-    
+public void plantcross(){
+  start();
+  planttopleftquadrant();
+  planttopright_bottomrightquadrant();
+  planttopright_bottomrightquadrant();
+  plantbottomleftquadrant();
+}
+public void start(){
+  turn(RIGHT);
+  sixhop();
+  turn(LEFT);
+  doublehop();
+}
+public void planttopleftquadrant(){
+  fourplanthop();
+  turn(LEFT);
+  threeplanthop();
+  turn(RIGHT);
+  twoplanthop();
+}
+public void planttopright_bottomrightquadrant(){
+  turn(RIGHT);
+  threeplanthop();
+  turn(LEFT);
+  threeplanthop();
+  turn(RIGHT);
+  twoplanthop();
+}
+public void plantbottomleftquadrant(){
+  turn(RIGHT);
+  threeplanthop();
+  turn(LEFT);
+  threeplanthop();
+  turn(RIGHT);
+  planthop();
+  doublehop();
+}
+public void fourplanthop(){
+  threeplanthop();
+  planthop();
+}
+public void threeplanthop(){
+  twoplanthop();
+  planthop();
+}
+public void twoplanthop(){
+  planthop();
+  planthop();
+}
+public void planthop(){
+  hop();
+  plant();
+}
+public void sixhop(){
+  doublehop();
+  doublehop();
+  doublehop();
+}
+public void doublehop(){
+  hop();
+  hop();
+}
+
     
     
     
