@@ -9,7 +9,7 @@ public class Jeroo extends JerooBase {
         
     }
     // Put any helpermethods here
-public void plantcross(){
+public void plantCross(){
   start();
   planttopleftquadrant();
   planttopright_bottomrightquadrant();
